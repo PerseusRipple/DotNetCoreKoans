@@ -33,7 +33,7 @@ namespace DotNetCoreKoans.Koans
       //Even though we don't specify types explicitly, the compiler
       //will pick one for us
       var names = new[] { "John", "Smith" };
-      Assert.Equal(typeof(string)[], names.GetType());
+      Assert.Equal(typeof(string[]), names.GetType());
 
       //but only if it can. So this doesn't work
       //var array = new[] { "John", 1 };

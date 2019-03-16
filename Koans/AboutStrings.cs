@@ -24,7 +24,7 @@ namespace DotNetCoreKoans.Koans
     public void SingleQuotedStringsAreNotStrings()
     {
       var str = 'H';
-      Assert.Equal(typeof(FillMeIn), str.GetType());
+      Assert.Equal(typeof(string[]), str.GetType());
     }
 
     [Step(3)]
