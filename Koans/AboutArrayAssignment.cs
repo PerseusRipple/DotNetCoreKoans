@@ -15,16 +15,16 @@ namespace DotNetCoreKoans.Koans
     [Step(1)]
     public void ImplicitAssignment()
     {
-      //Even though we don't specify types explicitly, the compiler
-      //will pick one for us
+      //   //Even though we don't specify types explicitly, the compiler
+      //   //will pick one for us
       var name = "John";
-      Assert.Equal(typeof(string[]), name.GetType());
+      Assert.Equal(typeof(string), name.GetType());
 
-      //but only if it can. So this doesn't work
-      //var array = null;
+      //   //but only if it can. So this doesn't work
+      //   //var array = null;
 
-      //It also knows the type, so once the above is in place, this doesn't work:
-      //name = 42;
+      //   //It also knows the type, so once the above is in place, this doesn't work:
+      //   //name = 42;
     }
 
     [Step(2)]
@@ -33,7 +33,7 @@ namespace DotNetCoreKoans.Koans
       //Even though we don't specify types explicitly, the compiler
       //will pick one for us
       var names = new[] { "John", "Smith" };
-      Assert.Equal(typeof(string[]), names.GetType());
+      Assert.Equal(typeof(string)[], names.GetType());
 
       //but only if it can. So this doesn't work
       //var array = new[] { "John", 1 };
